@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.graphics.Color
 import android.graphics.Typeface
 import android.view.Gravity
-import android.view.View
 import android.widget.Button
 import android.widget.GridLayout
 import android.widget.LinearLayout
@@ -101,7 +100,7 @@ class MainActivity : Activity() {
         root.addView(buttons, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
 
         banner = AdView(this).apply {
-            adUnitId = "ca-app-pub-3940256099942544/6300978111"
+            adUnitId = "ca-app-pub-6620088049494024/1757609187"
             setAdSize(AdSize.BANNER)
         }
         root.addView(banner, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
@@ -183,7 +182,7 @@ class MainActivity : Activity() {
     private fun loadInterstitial() {
         InterstitialAd.load(
             this,
-            "ca-app-pub-3940256099942544/1033173712",
+            "ca-app-pub-6620088049494024/3461573098",
             AdRequest.Builder().build(),
             object : InterstitialAdLoadCallback() {
                 override fun onAdLoaded(ad: InterstitialAd) { interstitial = ad }
