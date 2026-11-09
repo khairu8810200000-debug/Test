@@ -24,7 +24,7 @@ jobs:
         working-directory: khairul-game
         run: gradle assembleDebug
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: khairul-game-debug-apk
           path: khairul-game/app/build/outputs/apk/debug/app-debug.apk
